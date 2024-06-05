@@ -1,0 +1,173 @@
+<body class="bg-gray-100 flex justify-center items-center h-full">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-2xl">
+      <h1 class="text-sm mb-6">
+        Author : <span class="font-bold mr-8">Dayana Alfares</span> Student ID :
+        <span class="font-bold">202503526</span>
+      </h1>
+
+      <h1 class="text-2xl font-bold mt-2 mb-6 text-center">New Submission</h1>
+      <form class="" action="">
+        <div class="mb-4">
+          <label class="block text-gray-700">Enter Title Of Manuscript</label>
+          <input
+            type="text"
+            class="mt-2 p-2 border border-gray-300 rounded w-full"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Type Of Manuscript</label>
+          <select class="mt-2 p-2 border border-gray-300 rounded w-full">
+            <option>Type Of Manuscript</option>
+            <!-- Add options here -->
+          </select>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Add Abstract</label>
+          <textarea
+            class="mt-2 p-2 border border-gray-300 rounded w-full"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Enter Keywords</label>
+          <input
+            type="text"
+            class="mt-2 p-2 border border-gray-300 rounded w-full"
+            placeholder="Please separate with commas (,)"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Select Work Area</label>
+          <div class="mt-2">
+            <label class="inline-flex items-center">
+              <input
+                type="radio"
+                name="work_area"
+                value="Natural Science"
+                class="form-radio"
+              />
+              <span class="ml-2">Natural Science</span>
+            </label>
+            <label class="inline-flex items-center ml-6">
+              <input
+                type="radio"
+                name="work_area"
+                value="Engineering Science"
+                class="form-radio"
+              />
+              <span class="ml-2">Engineering Science</span>
+            </label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Your Message</label>
+          <textarea
+            class="mt-2 p-2 border border-gray-300 rounded w-full"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700"
+            >Please suggest three referees*</label
+          >
+          <div class="grid grid-cols-3 gap-4 mt-2">
+            <div>
+              <input
+                type="text"
+                placeholder="Reviewer's Name Surname"
+                class="p-2 border border-gray-300 rounded w-full"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                placeholder="Reviewer's E-Mail"
+                class="p-2 border border-gray-300 rounded w-full"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Affiliation (University/Establishment)"
+                class="p-2 border border-gray-300 rounded w-full"
+              />
+            </div>
+            <!-- Repeat above input fields as needed for other referees -->
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox" />
+            <span class="ml-2"
+              >I am accepting to be a Reviewer in NESciences</span
+            >
+          </label>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700"
+            >Please Add, Edit or Remove Authors</label
+          >
+          <div class="mt-2 flex items-center">
+            <input
+              type="text"
+              value="Yakup Kutlu"
+              class="p-2 border border-gray-300 rounded w-full"
+              readonly
+            />
+            <button class="ml-4 bg-blue-500 text-white p-2 rounded">
+              + Add Another Author
+            </button>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Upload Manuscript File*</label>
+          <input
+            type="file"
+            class="mt-2 p-2 border border-gray-300 rounded w-full"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700"
+            >Compliance with Ethical Standards</label
+          >
+          <div class="mt-2">
+            <label class="inline-flex items-center">
+              <input
+                type="radio"
+                name="ethics"
+                value="yes"
+                class="form-radio"
+              />
+              <span class="ml-2">YES</span>
+            </label>
+            <label class="inline-flex items-center ml-6">
+              <input type="radio" name="ethics" value="no" class="form-radio" />
+              <span class="ml-2">NO</span>
+            </label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700"
+            >If "YES": Please fill Statement for the Ethics Committee Approval
+            Form and attach it below:</label
+          >
+          <input
+            type="file"
+            class="mt-2 p-2 border border-gray-300 rounded w-full"
+          />
+        </div>
+        <div class="text-right">
+          <button
+            type="submit"
+            class="bg-green-500 text-white px-4 py-2 rounded"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
